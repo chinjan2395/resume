@@ -1,0 +1,6 @@
+[Wed Nov 23 15:42:31.762801 2016] [:error] [pid 5716:tid 896] [client ::1:52875] script 'C:/wamp/www/resume/index.php' not found or unable to stat
+[Wed Nov 23 16:17:48.815892 2016] [access_compat:error] [pid 6004:tid 900] [client ::1:49537] AH01797: client denied by server configuration: C:/wamp/www/resume/framework/
+[Wed Nov 23 16:17:48.817892 2016] [access_compat:error] [pid 6004:tid 900] [client ::1:49537] AH01797: client denied by server configuration: C:/wamp/www/resume/protected/
+[Wed Nov 23 20:37:31.096726 2016] [access_compat:error] [pid 3528:tid 900] [client ::1:49219] AH01797: client denied by server configuration: C:/wamp/www/resume/framework/
+[Wed Nov 23 20:37:31.096726 2016] [access_compat:error] [pid 3528:tid 900] [client ::1:49219] AH01797: client denied by server configuration: C:/wamp/www/resume/protected/
+[Thu Nov 24 23:36:18.467113 2016] [core:error] [pid 3752:tid 900] (20024)The given path is misformatted or contained invalid characters: [client ::1:50384] AH00127: Cannot map GET /%3C/div HTTP/1.1 to file, referer: http://resume.com/

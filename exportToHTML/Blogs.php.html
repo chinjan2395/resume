@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Blogs.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,0,0); }
+.s3 { color: rgb(128,128,128); font-style: italic; }
+.s4 { color: rgb(102,0,0); }
+.s5 { color: rgb(0,128,0); font-weight: bold; }
+.ls0 { height: 1px; border-width: 0; color: rgb(192,192,192); background-color:rgb(192,192,192)}
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+Blogs.php</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">&lt;?php</span><span class="s1"> 
+ <hr class="ls0"></span><span class="s0">class </span><span class="s2">Blogs </span><span class="s0">extends </span><span class="s2">CActiveRecord</span><span class="s1"> 
+{ 
+</span><span class="s3">//  public $id;</span><span class="s1"> 
+</span><span class="s3">//  public $title;</span><span class="s1"> 
+</span><span class="s3">//  public $text;</span><span class="s1"> 
+</span><span class="s3">//  public $status;</span><span class="s1"> 
+</span><span class="s3">//  public $date;</span><span class="s1"> 
+ 
+    </span><span class="s0">public static function </span><span class="s2">model</span><span class="s1">(</span><span class="s4">$className</span><span class="s1">=</span><span class="s2">__CLASS__</span><span class="s1">) 
+    { 
+        </span><span class="s0">return </span><span class="s2">parent</span><span class="s1">::</span><span class="s2">model</span><span class="s1">(</span><span class="s4">$className</span><span class="s1">); 
+    } 
+ 
+    </span><span class="s0">public function </span><span class="s2">tableName</span><span class="s1">(){ 
+    </span><span class="s0">return </span><span class="s5">'blogs'</span><span class="s1">; 
+    } 
+ 
+ 
+    </span><span class="s0">public function </span><span class="s2">getCriteria</span><span class="s1">(){ 
+        </span><span class="s0">return new </span><span class="s2">CDbCriteria</span><span class="s1">(); 
+    } 
+    </span><span class="s3">/** 
+     * Declares the validation rules. 
+     */</span><span class="s1"> 
+    </span><span class="s0">public function </span><span class="s2">rules</span><span class="s1">() 
+    { 
+        </span><span class="s0">return array</span><span class="s1">( 
+            </span><span class="s3">// name, email, subject and body are required</span><span class="s1"> 
+            </span><span class="s0">array</span><span class="s1">(</span><span class="s5">'title, text, status, date'</span><span class="s1">, </span><span class="s5">'required'</span><span class="s1">) 
+            </span><span class="s3">// verifyCode needs to be entered correctly</span><span class="s1"> 
+        ); 
+    } 
+ 
+ 
+    </span><span class="s3">/** 
+     * Declares customized attribute labels. 
+     * If not declared here, an attribute would have a label that is 
+     * the same as its name with the first letter in upper case. 
+     */</span><span class="s1"> 
+    </span><span class="s0">public function </span><span class="s2">attributeLabels</span><span class="s1">() 
+    { 
+        </span><span class="s0">return array</span><span class="s1">( 
+            </span><span class="s5">'id' </span><span class="s1">=&gt; </span><span class="s5">'ID'</span><span class="s1">, 
+            </span><span class="s5">'title' </span><span class="s1">=&gt; </span><span class="s5">'Title'</span><span class="s1">, 
+            </span><span class="s5">'text' </span><span class="s1">=&gt; </span><span class="s5">'Text'</span><span class="s1">, 
+            </span><span class="s5">'status' </span><span class="s1">=&gt; </span><span class="s5">'Status'</span><span class="s1">, 
+            </span><span class="s5">'date' </span><span class="s1">=&gt; </span><span class="s5">'Date'</span><span class="s1">, 
+        ); 
+    } 
+} 
+</span></pre>
+</body>
+</html>
